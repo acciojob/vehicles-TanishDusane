@@ -31,8 +31,8 @@ public class Car extends Vehicle {
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 
-    protected int currentSpeed;
-    protected int currentDirection;
+    int currentSpeed;
+    int currentDirection;
 
     public void setCurrentSpeed(int speed) {
         this.currentSpeed = speed;

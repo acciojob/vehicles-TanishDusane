@@ -7,6 +7,7 @@ public class F1 extends Car {
         super(name,4,2,6,isManual,"F1",2);
     }
 
+    /*
     public void accelerate(int rate){
         int newSpeed = this.getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
 
@@ -34,11 +35,31 @@ public class F1 extends Car {
          * speed 151-200: gear 4
          * speed 201-250: gear 5
          * speed more than 250: gear 6
-         */
+
         //for all other cases, change the gear accordingly
 
         if(newSpeed > 0) {
             this.changeSpeed(newSpeed, this.getCurrentDirection());
         }
+    }
+    */
+    public void accelerate(int rate) {
+        int newSpeed = this.getCurrentSpeed() + rate;
+        if (newSpeed <= 0) {
+            changeGear(1); // Stop the car, set gear as 1
+        } else if (newSpeed <= 50) {
+            changeGear(1);
+        } else if (newSpeed <= 100) {
+            changeGear(2);
+        } else if (newSpeed <= 150) {
+            changeGear(3);
+        } else if (newSpeed <= 200) {
+            changeGear(4);
+        } else if (newSpeed <= 250) {
+            changeGear(5);
+        } else {
+            changeGear(6);
+        }
+        this.changeSpeed(newSpeed, this.getCurrentDirection());
     }
 }

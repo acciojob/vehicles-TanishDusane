@@ -1,6 +1,6 @@
 package com.driver;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     private String name;
     private int currentSpeed;

@@ -10,7 +10,7 @@ public class F1 extends Car {
     public void accelerate(int rate){
         int newSpeed = this.getCurrentSpeed() + rate; //set the value of new speed by using currentSpeed and rate
 
-        if(newSpeed <= 0) {
+        if(newSpeed == 0) {
             stop();
             changeGear(1); // Stop the car, set gear as 1
         } else if (newSpeed > 0 && newSpeed <= 50) {
@@ -45,6 +45,3 @@ public class F1 extends Car {
         }
     }
 }
-
-//SBfa aybfvuabfuvb absufbvav
-//adfafdgafgaerg

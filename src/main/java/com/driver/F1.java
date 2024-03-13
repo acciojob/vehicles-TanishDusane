@@ -56,6 +56,7 @@ public class F1 extends Car {
     }
 
 
+    @Override
     public void accelerate(int rate) {
         int newSpeed = getCurrentSpeed() + rate;
 

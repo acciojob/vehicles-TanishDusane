@@ -8,14 +8,8 @@ public abstract class Vehicle {
 
     public Vehicle(String name) {
         this.name = name;
-<<<<<<< HEAD
-        currentSpeed = 0;
-        currentDirection = 0;
-=======
         this.currentSpeed = 0;
         this.currentDirection = 0;
-
->>>>>>> bffc0b726c261f6fb97ee448cdc2f71c14fc754e
     }
 
     public void steer(int direction){
@@ -40,7 +34,6 @@ public abstract class Vehicle {
         return name;
     }
 
-<<<<<<< HEAD
     public int getCurrentSpeed() {
         return currentSpeed;
     }
@@ -60,12 +53,4 @@ public abstract class Vehicle {
 //    public void setName(String name) {
 //        this.name = name;
 //    }
-=======
-    public int getCurrentSpeed(){
-        return currentSpeed;
-    }
-    public int getCurrentDirection(){
-        return currentDirection;
-    }
->>>>>>> bffc0b726c261f6fb97ee448cdc2f71c14fc754e
 }

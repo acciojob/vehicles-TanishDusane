@@ -18,7 +18,7 @@ public class Car extends Vehicle {
         this.isManual = isManual;
         this.seats = seats;
 
-        currentGear = 1;
+        this.currentGear = 1;
         //Hint: Car extends Vehicle
     }
 
@@ -31,18 +31,17 @@ public class Car extends Vehicle {
     }
 
     public void changeSpeed(int newSpeed, int newDirection) {
-        this.currentSpeed = newSpeed;
-        this.currentDirection = newDirection;
+        move(newSpeed,newDirection);
         System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
     }
 
-    public void setCurrentDirection(int currentDirection) {
-        this.currentDirection = currentDirection;
-    }
-
-    public void setCurrentSpeed(int currentSpeed) {
-        this.currentSpeed = currentSpeed;
-    }
+//    public void setCurrentDirection(int currentDirection) {
+//        this.currentDirection = currentDirection;
+//    }
+//
+//    public void setCurrentSpeed(int currentSpeed) {
+//        this.currentSpeed = currentSpeed;
+//    }
 
     public int getCurrentGear() {
         return currentGear;

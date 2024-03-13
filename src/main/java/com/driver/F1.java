@@ -55,7 +55,7 @@ public class F1 extends Car {
         super(name, 4, 2, 6, isManual, "F1", 2);
     }
 
-    @Override
+
     public void accelerate(int rate) {
         int newSpeed = getCurrentSpeed() + rate;
 

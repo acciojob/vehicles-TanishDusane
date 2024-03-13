@@ -1,6 +1,6 @@
 package com.driver;
 
-public abstract class Car extends Vehicle {
+public class Car extends Vehicle {
     private int wheels;
     private String type;
     private int doors;
@@ -71,5 +71,4 @@ public abstract class Car extends Vehicle {
         return seats;
     }
 
-    public abstract void accelerate(int rate);
 }
